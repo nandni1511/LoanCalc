@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="main.css" />
+    <title>Loan Calculator</title>
+  </head>
+  <body>
+    <div class="header">
+      <p>Loan Calculator</p>
+    </div>
+    <div class="appContainer">
+      <form>
+        <div>
+          <label for="loanAmt">Loan Amount : ₹</label>
+          <input
+            type="number"
+            min="0"
+            id="loanAmt"
+            placeholder="Enter loan amount"
+          />
+        </div>
+        <div>
+          <label for="intRate">Annual Ineterest Rate : </label>
+          <input
+            type="number"
+            id="intRate"
+            placeholder="Enter annual interest rate"
+          />
+        </div>
+        <div>
+          <label for="tenure">Tenure : </label>
+          <input
+            type="number"
+            id="tenure"
+            min="0"
+            placeholder="Enter tenure in months"
+          />
+        </div>
+        <div>
+          <input type="submit" class="btn submit" value="Calculate" />
+          <input type="reset" class="btn reset" value="Clear" />
+        </div>
+      </form>
+    </div>
+    <div>
+      <span id="emi">Enter the details to get started</span>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
